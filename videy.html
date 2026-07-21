@@ -8,15 +8,18 @@
 </head>
 <body>
 
-<header class="header">Klik dua kali</header>
+<header class="header">Videy</header>
 
 <main class="container">
 
   <div class="video-wrapper">
 
-    <!-- PLAY SAJA (GANTI VIDEO) -->
-    <button id="startBtn">
-        <span>▶</span>
+    <video id="video" controls playsinline>
+        <source src="https://cdn2.videy.co/eC6f4QlU1.mp4" type="video/mp4">
+    </video>
+
+    <button id="videoOverlay" aria-label="overlay">
+        <span class="overlay-text"></span>
     </button>
 
     <button class="icon-btn wa" onclick="joinWhatsAppGroup()">
@@ -31,22 +34,12 @@
 
   </div>
 
-  <button class="share-btn" id="shareBtn">📁 Video Viral Terbaru</button>
+  <button class="share-btn" id="shareBtn">📁 Full Video Viral</button>
 
 </main>
 
-<script>
-document.getElementById("startBtn").addEventListener("click", () => {
-
-    // TAB BARU → VIDEO ASLI
-    window.open("index2.html", "_blank");
-
-    // TAB LAMA → REDIRECT
-    window.location.href = "https://otieu.com/4/10519483";
-
-});
-</script>
 <script src="main.js"></script>
-
 </body>
 </html>
+
+
